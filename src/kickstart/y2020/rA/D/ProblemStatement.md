@@ -1,6 +1,6 @@
 # Bundling
 
-##Problem
+## Problem
 Pip has N strings. Each string consists only of letters from A to Z. Pip would like to bundle their strings into groups of size K. Each string must belong to exactly one group.
 
 The score of a group is equal to the length of the longest prefix shared by all the strings in that group. For example:
@@ -11,13 +11,13 @@ The score of a group is equal to the length of the longest prefix shared by all 
 
 Please help Pip bundle their strings into groups of size K, such that the sum of scores of the groups is maximized.
 
-##Input
+## Input
 The first line of the input gives the number of test cases, T. T test cases follow. Each test case begins with a line containing the two integers N and K. Then, N lines follow, each containing one of Pip's strings.
 
-##Output
+## Output
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the maximum sum of scores possible.
 
-##Limits
+## Limits
 Time limit: 20 seconds per test set.  
 Memory limit: 1GB.  
 1 ≤ T ≤ 100.  
@@ -27,15 +27,15 @@ K divides N.
 Each of Pip's strings contain at least one character.  
 Each string consists only of letters from A to Z.  
 
-###Test set 1
+### Test set 1
 Each of Pip's strings contain at most 5 characters.
 
-###Test set 2
+### Test set 2
 The total number of characters in Pip's strings across all test cases is at most 2 × 106.
 
-##Samples
+## Samples
 
-####Input 1
+#### Input 1
 ```
 2
 2 2
@@ -51,12 +51,12 @@ GOO
 GOOO
 GOOO
 ```
-####Output 1
+#### Output 1
 ```
 Case #1: 0
 Case #2: 10
 ```
-####Input 2
+#### Input 2
 ```
 1
 6 3
@@ -67,11 +67,11 @@ RANDOM
 FIREWALL
 FIREFIGHTER
 ```
-####Output 2
+#### Output 2
 ```
 Case #1: 6
 ```
-###Sample #1
+### Sample #1
 In Case #1, Pip can achieve a total score of 0 by make the groups:
 
 * {KICK, START}, with a score of 0.
@@ -83,7 +83,7 @@ In Case #2, Pip can achieve a total score of 10 by make the groups:
 * {GOO, GOO}, with a score of 3.
 * {GOOO, GOOO}, with a score of 4.
 
-###Sample #2
+### Sample #2
 In Case #1, Pip can achieve a total score of 6 by make the groups:
 
 * {RAINBOW, RANK, RANDOM}, with a score of 2.
